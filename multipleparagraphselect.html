@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>querySelector Example 2</title>
+</head>
+<body>
+  <p>Paragraph 1</p>
+  <p>Paragraph 2</p>
+  <p>Paragraph 3</p>
+
+  <button onclick="changePara()">Change First Para</button>
+
+  <script>
+    function changePara() {
+      document.querySelector("p").innerHTML = "👉 This is changed!";
+    }
+  </script>
+</body>
+</html>

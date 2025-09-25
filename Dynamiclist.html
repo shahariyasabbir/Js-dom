@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Example 4</title>
+  <style>
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #ddd;
+      margin: 5px;
+      padding: 8px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Add Items to the List</h2>
+  <input type="text" id="itemInput" placeholder="Enter item...">
+  <button onclick="addItem()">Add</button>
+
+  <ul id="myList"></ul>
+
+  <script>
+    function addItem() {
+      let item = document.getElementById("itemInput").value;
+      if(item.trim() !== "") {
+        let li = document.createElement("li");
+        li.textContent = item;
+        document.getElementById("myList").appendChild(li);
+        document.getElementById("itemInput").value = "";
+      }
+    }
+  </script>
+</body>
+</html>

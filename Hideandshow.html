@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Example 3</title>
+  <style>
+    #box {
+      width: 200px;
+      height: 200px;
+      background: tomato;
+      margin: 20px auto;
+      text-align: center;
+      line-height: 200px;
+      color: white;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">I am a Box</div>
+  <button onclick="hideBox()">Hide</button>
+  <button onclick="showBox()">Show</button>
+
+  <script>
+    function hideBox() {
+      document.getElementById("box").style.display = "none";
+    }
+    function showBox() {
+      document.getElementById("box").style.display = "block";
+    }
+  </script>
+</body>
+</html>

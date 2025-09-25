@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>querySelector Example 3</title>
+  <style>
+    .highlight { font-size: 22px; color: green; }
+  </style>
+</head>
+<body>
+  <p class="highlight">This will change</p>
+  <p class="hiji">Normal text</p>
+
+  <button onclick="makeRed()">Make Highlight Red</button>
+  <button onclick="makeRed()"></button>
+
+  <script>
+    function makeRed() {
+      document.querySelector(".highlight").style.color = "red";
+      document.querySelector(".hiji").style.color = "green";
+    }
+  </script>
+</body>
+</html>

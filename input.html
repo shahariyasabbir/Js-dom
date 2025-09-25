@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Example 2</title>
+  <style>
+    input, button {
+      padding: 8px;
+      margin: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Type Something 👇</h2>
+  <input type="text" id="myInput" placeholder="Write here...">
+  <button onclick="showText()">Show Text</button>
+  <p id="output"></p>
+
+  <script>
+    function showText() {
+      let text = document.getElementById("myInput").value;
+      document.getElementById("output").innerHTML = "You wrote: " + text;
+    }
+  </script>
+</body>
+</html>

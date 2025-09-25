@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>querySelector Example 5</title>
+  <style>
+    #box {
+      width: 200px;
+      height: 200px;
+      background: lightcoral;
+      margin: 20px auto;
+      transition: 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <div id="box"></div>
+
+  <script>
+    let box = document.querySelector("#box");
+
+    box.addEventListener("mouseover", () => {
+      box.style.background = "lightgreen";
+      box.style.transform = "scale(1.1)";
+    });
+
+    box.addEventListener("mouseout", () => {
+      box.style.background = "lightcoral";
+      box.style.transform = "scale(1)";
+    });
+  </script>
+</body>
+</html>
